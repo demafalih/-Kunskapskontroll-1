@@ -7,7 +7,7 @@ def load_data(file_path):
     return df
 
 def filter_horsepower(df):
-    filtered_df = df[df['horsepower']> 190]
+    filtered_df = df[df['horsepower'] > 190]
     return filtered_df
 
 def save_to_database(df, db_path):
