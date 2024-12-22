@@ -1,3 +1,4 @@
+#flödet
 import pandas as pd
 import sqlite3
 
@@ -13,7 +14,8 @@ def save_to_database(df, db_path):
     con = sqlite3.connect(db_path)
     df.to_sql('AutomobileHorsepower', con, if_exists='replace', index=False)
     con.close()
-    
+
+#test
 def compare_origin_hp(df):
     if 'horsepower' not in df.columns or 'origin' not in df.columns:
         raise ValueError("Dataframe does not contain 'horsepower' / 'origin'.")
